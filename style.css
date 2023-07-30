@@ -1,0 +1,547 @@
+﻿html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.swipe figure{
+    position: absolute;
+    size: contain;
+    display: flex;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+.swipe figure img{
+    float: left;
+    width: 20%;
+}
+
+
+
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+
+.swiper img{
+    display: none;
+}
+nav{
+    display: flex ;
+    position: absolute;
+    padding: 0.7% 6%;
+    top: 0px;
+    position: sticky;
+    z-index: 100;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 75px;
+}
+
+nav img{
+    padding-left: 20px;
+    width: 130px;
+    margin-left: 40%;
+}
+
+.nav-links{
+    padding-top: 15px;
+    margin: 5%;
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: white;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: bold;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(248, 149, 233);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* ---------------- ABOUT ME SECTION ---------------- */
+
+.about{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("images/bg.jpg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+    
+.puso{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    right: 100px;
+}
+.about span{
+    background: rgb(55, 76, 160);
+    height: 4px;
+    width: 200px;
+    top: 260px;
+    position: absolute;
+    left: 0;
+}
+.puso h1{
+    padding-top: 170px;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-align: start;
+}
+.puso p{
+    padding-top: 10%;
+    width: 800px;
+    padding-bottom: 70px;
+    font-family: arial;
+    font-size: bold;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.word{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.more{
+    background-color: rgb(55, 76, 160);
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/* ---------------- ON GOING PROJECT ---------------- */
+
+.project{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+.banner {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transition: 2s ease;
+}
+.banner .glass-wrapper {
+    width: 30%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .hero-title {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 13rem;
+  }
+  
+  .hero-title p {
+    font-size: 47px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: #fff;
+  }
+  
+  .hero-title .country {
+    font-size: 85px;
+    letter-spacing: 3px;
+  }
+  
+  .hero-title .details {
+    width: 80%;
+    padding-top: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding-bottom: 2.5rem;
+    font-size: 20px;
+  }
+  
+  .tourist-list {
+    bottom: 25px;
+    position: absolute;
+    left: 35rem;
+    
+  }
+  
+  .tourist-list p {
+    color: #fff;
+    padding-left: 20px;
+    margin-bottom: auto;
+    line-height: 24px;
+    
+  }
+  
+  .tourist-list ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    width: 65vw;
+    height: 15rem;
+    align-items: center;
+    
+  }
+  
+  .tourist-list .thumbnail {
+    display: flex;
+    height: 10rem;
+    width: 18rem;
+    background-size: cover !important;
+    border-radius: 8px;
+    flex-direction: column;
+    
+  }
+  
+  .tourist-list .thumbnail .details {
+    margin-top: auto;
+    padding: 15px 0px;
+    background-color: rgba(128, 128, 128, 0.45); 
+
+  } 
+  
+
+  
+  
+  /*   ------  END OF PALAWAN PICTURE --------*/
+
+
+  .details .place-name {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .details .province {
+    font-weight: 300;
+  }
+  
+  .tourist-list .active {
+    margin-top: -5rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*------------------ MOBILE VIEW -------------------     */
+
+
+@media only screen and (max-width: 390px) {
+    .html{
+        display: flex;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .header img{
+        display: flex;
+        margin-left: -10px;
+        margin-top: -35px;
+    }
+    .swipe img{
+     display: none;
+     top: 0%;
+    }
+    
+    /* HOME, ABOUT ME, PROJECTS, CONTACT*/
+    .nav-links ul li a{
+        display: none;
+    }
+    nav{
+        display: flex ;
+        position: absolute;
+        padding: 0.7% 6%;
+        top: 0px;
+        position: sticky;
+        z-index: 100;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 75px;
+    }
+
+    .swiper figure{
+        position: absolute;
+        size: contain;
+        display: flex;
+        width: 350%;
+        height: 100vh;
+        top: 13%;
+        animation: 33s sliders infinite;
+        float: left;
+    }
+    .swiper figure img{
+        float: left;
+    }
+    /* slider for iphone reso*/
+    @keyframes sliders{
+        0%{
+            left: 0%;
+        }
+        20%{
+            left: 0%;
+        }   
+        25%{
+            left: -100%;
+        }  
+        45%{
+            left: -100%;
+        }   
+        50%{
+            left: -205%;
+        }
+        70%{
+            left: -205%;
+        }
+        75%{
+            left: -305%;
+        }
+        95%{
+            left: -305%;
+        }
+        100%{
+            left: -410%;
+        }
+
+}
+    
+    .swiper figure img{
+        float: left;
+        width: 30%;
+    }
+
+    /** Disabling horizontal scroll**/
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .about{
+        min-height: 100vh;
+        width: 100%;
+        background-image: url("images/try.jpg");
+        background-position: 10%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+    span{
+        display: none;
+    }
+        
+    .puso{
+        position: absolute;
+        font-size: 15px;
+        color: white;
+        left: 10%;
+    }
+    .puso h1{
+        padding-top: 320px;
+        font-size: 20px;
+        letter-spacing: 4px;
+        text-align: left;
+        padding-left: 2%;
+        width: 200%;
+        font-weight: bold;
+        text-decoration: underline;
+
+    }
+    .puso p{
+        margin-left: -5%;
+        padding-top: 10%;
+        width: 340px;
+        padding-bottom: 0px;
+        font-family: arial;
+        font-size: bold;
+        letter-spacing: 1px;
+        line-height: 19px;
+        text-align: justify;
+    }
+    
+    .word{
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+    
+    .more{
+        background-color: rgb(55, 76, 160);
+        font-weight: bolder;
+        width: 160px;
+        height: 50px;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        text-decoration: none;
+        margin-left: 30%;
+
+    }
+    .tourist-list{
+        display: column;
+        align-items: center;
+        
+    }
+   
+    .hero-titles p {
+        font-size: 47px;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 60px;
+        color: #fff;
+      }
+    .hero-titles{
+        padding-top: 20%;
+    }
+    .hero-title{
+        display: none;
+     }
+
+      .country {
+        display: none;
+      }
+      
+
+      .tourist-list {
+        top: 30%;
+        position: absolute;
+        left: 2rem;
+        align-items: center;
+      }
+
+      .tourist-list ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 30%;
+      }
+      .tourist-list .thumbnail {
+        display: flex;
+        height: 10rem;
+        width: 22rem;
+        background-size: cover !important;
+        border-radius: 8px;
+        flex-direction: column;
+        
+      }
+}
+
+
